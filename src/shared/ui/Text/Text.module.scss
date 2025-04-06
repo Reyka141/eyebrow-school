@@ -17,49 +17,89 @@
 // sizes
 
 .xl {
-    @include font-xl;
+    @include size-xl;
 }
 
 .lg {
-    @include font-lg;
+    @include size-lg;
 }
 
 .md-lg {
-    @include font-md-lg;
+    @include size-md-lg;
 }
 
 .md {
-    @include font-md;
+    @include size-md;
 }
 
 .md-caps {
-    @include font-md-caps;
+    @include size-md-caps;
 }
 
 .sm-lg {
-    @include font-sm-lg;
+    @include size-sm-lg;
 }
 
 .sm {
-    @include font-sm;
+    @include size-sm;
 }
 
 .sm-bold {
-    @include font-sm-bold;
+    @include size-sm;
 }
 
 .xs-lg {
-    @include font-xs-lg;
+    @include size-xs-lg;
 }
 
 .xs {
-    @include font-xs;
+    @include size-xs;
 }
 
 .xs-bold {
-    @include font-xs-bold;
+    @include size-xs;
 }
 
 .xxs {
-    @include font-xxs;
+    @include size-xxs;
+}
+
+.md-lg-secondary {
+    @include size-md-lg-secondary;
+}
+
+// weights
+
+.extralight {
+    @include font-extralight;
+}
+
+.light {
+    @include font-light;
+}
+
+.regular {
+    @include font-regular;
+}
+
+.medium {
+    @include font-medium;
+}
+
+.semibold {
+    @include font-semibold;
+}
+
+.bold {
+    @include font-bold;
+}
+
+.extrabold {
+    @include font-extrabold;
+}
+
+// shadow
+
+.shadow {
+    text-shadow: 0px 2px 1px  $text-shadow-color;
 }

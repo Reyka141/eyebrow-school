@@ -7,7 +7,7 @@
 }
 
 body {
-    @include font-sm;
+    @include size-sm;
 
     background-color: $bg;
 }

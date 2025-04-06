@@ -1,0 +1,23 @@
+.Header {
+    display: flex;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.HeaderBg {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.HeaderContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding-right: 7%;
+    text-align: center;
+}

@@ -1,5 +1,5 @@
 .button {
-    @include font-xs-md;
+    @include size-xs;
     font-weight: 600;
     padding: 10px;
     color: $brown_1;

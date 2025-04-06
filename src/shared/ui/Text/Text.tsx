@@ -4,17 +4,13 @@ import styles from './Text.module.scss';
 
 export enum TextTheme {
     PRIMARY = 'primary',
-    CAPS = 'caps',
-    ERROR = 'error',
-    CONTRAST = 'contrast',
-    RED = 'red',
-    BLACK = 'black',
 }
 
 export enum TextSize {
     XL = 'xl',
     LG = 'lg',
     MD_LG = 'md-lg',
+    MD_LG_SECONDARY = 'md-lg-secondary',
     MD = 'md',
     MD_CAPS = 'md-caps',
     SM_LG = 'sm-lg',
@@ -26,17 +22,32 @@ export enum TextSize {
     XXS = 'xxs',
 }
 
+export enum TextWeight {
+    EXTRALIGHT = 'extralight',
+    LIGHT = 'light',
+    REGULAR = 'regular',
+    MEDIUM = 'medium',
+    SEMIBOLD = 'semibold',
+    BOLD = 'bold',
+    EXTRABOLD = 'extrabold',
+}
+
 interface TextProps {
     className?: string;
     text?: string;
     theme?: TextTheme;
     size?: TextSize;
+    weight?: TextWeight;
+    shadow?: boolean;
 }
 export const Text: FC<TextProps> = (props) => {
-    const { className, text, theme = TextTheme.PRIMARY, size = TextSize.SM } = props;
+    const { className, text, theme = TextTheme.PRIMARY, size = TextSize.SM, weight = TextWeight.REGULAR, shadow } = props;
+
     return (
         <div className={cn(className, styles[theme])}>
-            {text && <p className={cn(styles.text, styles[size])}>{text}</p>}
+            {text && (
+                <p className={cn(styles.text, styles[size], styles[weight], { [styles.shadow]: shadow })}>{text}</p>
+            )}
         </div>
     );
 };

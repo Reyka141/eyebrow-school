@@ -2,176 +2,119 @@
 
 // Текстовые миксины
 
-// Экстра большие размеры
-@mixin font-xl {
-    font-size: 60px;
+// Миксины жирности шрифта
+@mixin font-extralight {
+    font-weight: 200; // Extra Light
+}
+
+@mixin font-light {
+    font-weight: 300; // Light
+}
+
+@mixin font-regular {
+    font-weight: 400; // Regular
+}
+
+@mixin font-medium {
+    font-weight: 500; // Medium
+}
+
+@mixin font-semibold {
+    font-weight: 600; // Semi Bold
+}
+
+@mixin font-bold {
+    font-weight: 700; // Bold
+}
+
+@mixin font-extrabold {
     font-weight: 800; // Extra Bold
+}
+
+// Миксины размеров шрифта
+@mixin size-xl {
+    font-size: 60px;
     line-height: 72px;
     font-family: $font-stack;
 }
 
-@mixin font-lg {
+@mixin size-lg {
     font-size: 40px;
-    font-weight: 700; // Bold
     line-height: 48px;
     font-family: $font-stack;
 }
 
-@mixin font-md-lg {
+@mixin size-md-lg {
     font-size: 34px;
-    font-weight: 600; // Semi Bold
     line-height: 41px;
     font-family: $font-stack;
 }
 
-@mixin font-md {
+@mixin size-md {
     font-size: 24px;
-    font-weight: 600; // Semi Bold
     line-height: 29px;
     font-family: $font-stack;
 }
 
-@mixin font-md-caps {
+@mixin size-md-caps {
     font-size: 24px;
-    font-weight: 600; // Semi Bold
     line-height: 29px;
     font-family: $font-stack;
     text-transform: uppercase;
 }
 
-@mixin font-sm-lg {
+@mixin size-sm-lg {
     font-size: 20px;
-    font-weight: 500; // Medium
     line-height: 24px;
     font-family: $font-stack;
 }
 
-@mixin font-sm {
+@mixin size-sm {
     font-size: 16px;
-    font-weight: 400; // Regular
     line-height: 24px;
     font-family: $font-stack;
 }
 
-@mixin font-sm-bold {
-    font-size: 16px;
-    font-weight: 600; // Semi Bold
-    line-height: 24px;
-    font-family: $font-stack;
-}
-
-@mixin font-xs-lg {
+@mixin size-xs-lg {
     font-size: 14px;
-    font-weight: 400; // Regular
     line-height: 20px;
     font-family: $font-stack;
 }
 
-@mixin font-xs-md {
-    font-size: 14px;
-    font-weight: 500; // Medium
-    line-height: 20px;
-    font-family: $font-stack;
-}
-
-@mixin font-xs {
+@mixin size-xs {
     font-size: 12px;
-    font-weight: 400; // Regular
     line-height: 16px;
     font-family: $font-stack;
 }
 
-@mixin font-xs-bold {
-    font-size: 12px;
-    font-weight: 600; // Semi Bold
-    line-height: 16px;
-    font-family: $font-stack;
-}
-
-@mixin font-xxs {
+@mixin size-xxs {
     font-size: 10px;
-    font-weight: 400; // Regular
     line-height: 14px;
     font-family: $font-stack;
 }
 
-@mixin font-xxs-md {
-    font-size: 10px;
-    font-weight: 500; // Medium
-    line-height: 14px;
-    font-family: $font-stack;
-}
-
-@mixin font-xxs-bold {
-    font-size: 10px;
-    font-weight: 700; // Bold
-    line-height: 14px;
-    font-family: $font-stack;
-}
-
-@mixin font-tiny {
+@mixin size-tiny {
     font-size: 8px;
-    font-weight: 400; // Regular
     line-height: 12px;
     font-family: $font-stack;
 }
 
-@mixin font-micro {
+@mixin size-micro {
     font-size: 6px;
-    font-weight: 300; // Light
     line-height: 8px;
     font-family: $font-stack;
 }
 
 // Миксины для шрифта Bacasime Antique
-@mixin font-secondary {
+@mixin size-md-lg-secondary {
+    font-size: 34px;
     font-family: $font-stack-secondary;
-    font-weight: 400; // Regular (единственный доступный вес)
 }
 
-// Дополнительные миксины по весам шрифта
-@mixin font-light {
-    font-weight: 300; // Light
-    font-family: $font-stack;
-}
-
-@mixin font-regular {
-    font-weight: 400; // Regular
-    font-family: $font-stack;
-}
-
-@mixin font-medium {
-    font-weight: 500; // Medium
-    font-family: $font-stack;
-}
-
-@mixin font-semibold {
-    font-weight: 600; // Semi Bold
-    font-family: $font-stack;
-}
-
-@mixin font-bold {
-    font-weight: 700; // Bold
-    font-family: $font-stack;
-}
-
-@mixin font-extrabold {
-    font-weight: 800; // Extra Bold
-    font-family: $font-stack;
-}
-
-@mixin font-extralight {
-    font-weight: 200; // Extra Light
-    font-family: $font-stack;
-}
-
-
-// Container 
+// Container
 
 @mixin container {
-    width: $width-container;
+    max-width: $width-container;
     margin: 0 auto;
-    padding: 0 15px;
+    // padding: 0 15px;
 }
-
-
