@@ -1,6 +1,5 @@
 .MainPage {
-    max-width: $width-container;
-    margin: 0 auto;
+    @include container;
 }
 
 // <-- Header section start -->
