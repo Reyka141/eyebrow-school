@@ -1,0 +1,89 @@
+.TrainingDescriptionSection {
+    @include container;
+    padding: 0 15px;
+    margin-top: 40px;
+}
+
+.content_item_number {
+    @include size-sm;
+    @include font-extrabold;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed $brown;
+}
+.content_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.content {
+    position: relative;
+    width: 363px;
+    height: 124px;
+}
+
+.content_item_1 {
+    position: relative;
+    display: flex;
+    gap: 7px;
+}
+
+.content_item_text {
+    max-width: 110px;
+}
+
+.content_item_container_1 {
+    position: absolute;
+    top: 0;
+    left: 19px;
+}
+
+.content_item_arrow_1 {
+    position: absolute;
+    bottom: -23px;
+    left: 40px;
+}
+
+.content_item_container_2 {
+    position: absolute;
+    top: 69px;
+    left: 101px;
+}
+
+.content_item {
+    position: relative;
+}
+
+.content_item_text_2 {
+    position: absolute;
+    width: 100px;
+    bottom: -13px;
+    left: -23px;
+}
+
+.content_item_arrow_2 {
+    position: absolute;
+    top: 5px;
+    right: -69px;
+}
+
+.content_item_container_3 {
+    position: absolute;
+    top: 35px;
+    left: 218px;
+}
+
+.content_item_text_3 {
+    width: 117px;
+    position: absolute;
+    top: -34px;
+    left: 16px;
+}
