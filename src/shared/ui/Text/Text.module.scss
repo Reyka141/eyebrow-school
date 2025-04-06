@@ -3,15 +3,15 @@
 }
 
 .brown {
-    .text {
-        color: $brown;
-    }
+    color: $brown;
 }
 
 .brown_1 {
-    .text {
-        color: $brown_1;
-    }
+    color: $brown_1;
+}
+
+.white {
+    color: $white;
 }
 
 // sizes
@@ -68,6 +68,14 @@
     @include size-md-lg-secondary;
 }
 
+.tiny {
+    @include size-tiny;
+}
+
+.micro {
+    @include size-micro;
+}
+
 // weights
 
 .extralight {
@@ -101,5 +109,5 @@
 // shadow
 
 .shadow {
-    text-shadow: 0px 2px 1px  $text-shadow-color;
+    text-shadow: 0px 2px 1px $text-shadow-color;
 }

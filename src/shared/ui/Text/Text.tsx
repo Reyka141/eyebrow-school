@@ -20,6 +20,8 @@ export enum TextSize {
     XS = 'xs',
     XS_BOLD = 'xs-bold',
     XXS = 'xxs',
+    TINY = 'tiny',
+    MICRO = 'micro',
 }
 
 export enum TextWeight {
@@ -32,21 +34,42 @@ export enum TextWeight {
     EXTRABOLD = 'extrabold',
 }
 
+export enum TextColor {
+    BROWN = 'brown',
+    BROWN_1 = 'brown_1',
+    WHITE = 'white',
+}
+
 interface TextProps {
     className?: string;
     text?: string;
     theme?: TextTheme;
     size?: TextSize;
     weight?: TextWeight;
+    color?: TextColor;
     shadow?: boolean;
 }
 export const Text: FC<TextProps> = (props) => {
-    const { className, text, theme = TextTheme.PRIMARY, size = TextSize.SM, weight = TextWeight.REGULAR, shadow } = props;
+    const {
+        className,
+        text,
+        theme = TextTheme.PRIMARY,
+        size = TextSize.SM,
+        weight = TextWeight.REGULAR,
+        shadow,
+        color = TextColor.BROWN,
+    } = props;
 
     return (
         <div className={cn(className, styles[theme])}>
             {text && (
-                <p className={cn(styles.text, styles[size], styles[weight], { [styles.shadow]: shadow })}>{text}</p>
+                <p
+                    className={cn(styles.text, styles[size], styles[weight], styles[color], {
+                        [styles.shadow]: shadow,
+                    })}
+                >
+                    {text}
+                </p>
             )}
         </div>
     );

@@ -1,3 +1,4 @@
+import { GreetingSection } from '@/pages/MainPage/ui/GreetingSection/GreetingSection';
 import { Header } from '@/pages/MainPage/ui/Header/Header';
 import cn from 'classnames';
 import { FC } from 'react';
@@ -11,7 +12,7 @@ const MainPage: FC<MainPageProps> = (props) => {
     return (
         <div className={cn(styles.MainPage, className)}>
             <Header />
-            {/* Секция приветствие */}
+            <GreetingSection />
             {/* Секция с картинками покупки курсов */}
             {/* Секция со стрелкой вниз */}
             {/* Секция с информацией с курсами */}
