@@ -1,0 +1,65 @@
+.text {
+    color: $white;
+}
+
+.brown {
+    .text {
+        color: $brown;
+    }
+}
+
+.brown_1 {
+    .text {
+        color: $brown_1;
+    }
+}
+
+// sizes
+
+.xl {
+    @include font-xl;
+}
+
+.lg {
+    @include font-lg;
+}
+
+.md-lg {
+    @include font-md-lg;
+}
+
+.md {
+    @include font-md;
+}
+
+.md-caps {
+    @include font-md-caps;
+}
+
+.sm-lg {
+    @include font-sm-lg;
+}
+
+.sm {
+    @include font-sm;
+}
+
+.sm-bold {
+    @include font-sm-bold;
+}
+
+.xs-lg {
+    @include font-xs-lg;
+}
+
+.xs {
+    @include font-xs;
+}
+
+.xs-bold {
+    @include font-xs-bold;
+}
+
+.xxs {
+    @include font-xxs;
+}

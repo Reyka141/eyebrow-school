@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+// Шрифты
+$font-stack: 'Inter', sans-serif;
+
+$font-stack-secondary: 'Bacasime Antique', serif;
+
+// Цвета
+
+// Primary
+$white: #fff;
+
+// Functional
+$brown: #382916;
+$brown_1: #563521;
+$bg: #fff;
+$bg-transparent: rgb(27 27 27 / 60%);
+
+// Тени
+$shadow-black: 0px 2px 1px 0px #0000004d;
+
+// Размеры контейнеров
+$width-container: 440px;
+
+// Скругления для крупных форм
+$border-radius-100px: 100px;
+$border-radius-big: 12px;
+$border-radius-small: 6px;
+
+// z-index
+$z-index-negative-1: -1;
+$z-index-negative-10: -10;
+$z-index-1: 1;
+$z-index-10: 10;
+$z-index-100: 100;
+$z-index-1000: 1000;
+$z-index-10000: 10000;
+$z-index-100000: 100000;
