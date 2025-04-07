@@ -1,0 +1,70 @@
+.ServicesListItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 8px 6px;
+    border-radius: $border-radius-big;
+}
+
+.number {
+    @include size-xs;
+    @include font-regular;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: $border-radius-100px;
+    border: 1px solid $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+}
+
+.title {
+    margin-bottom: 5px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.priceTextWrapper {
+    height: 30px;
+    padding: 0 10px;
+    border-radius: $border-radius-big;
+    border: 1px solid $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    margin-bottom: 5px;
+}
+
+.firstDescription {
+    max-width: 330px;
+    word-wrap: balance;
+}
+
+.listItem {
+    margin-left: 15px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -10px;
+        transform: translateY(-50%);
+        width: 4px;
+        height: 4px;
+        border-radius: $border-radius-100px;
+        background-color: $white;
+    }
+}

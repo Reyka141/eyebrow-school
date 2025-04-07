@@ -1,3 +1,4 @@
+import { ServicesListSection } from '@/entities/Course';
 import { GreetingSection } from '@/pages/MainPage/ui/GreetingSection/GreetingSection';
 import { Header } from '@/pages/MainPage/ui/Header/Header';
 import { TrainingDescriptionSection } from '@/pages/MainPage/ui/TrainingDescriptionSection/TrainingDescriptionSection';
@@ -15,7 +16,7 @@ const MainPage: FC<MainPageProps> = (props) => {
             <Header />
             <GreetingSection />
             <TrainingDescriptionSection />
-            {/* Секция с картинками покупки курсов */}
+            <ServicesListSection />
             {/* Секция со стрелкой вниз */}
             {/* Секция с информацией с курсами */}
             {/* Секция с отзывами */}

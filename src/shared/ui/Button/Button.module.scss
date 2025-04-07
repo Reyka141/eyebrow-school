@@ -1,7 +1,8 @@
 .button {
     @include size-xs;
     font-weight: 600;
-    padding: 10px;
+    height: 30px;
+    padding: 0 10px;
     color: $brown_1;
     border-radius: $border-radius-big;
 }
@@ -9,6 +10,7 @@
 .primary {
     background-color: $white;
     transition: all 0.3s ease;
+    
 
     &:hover {
         background-color: $brown_1;

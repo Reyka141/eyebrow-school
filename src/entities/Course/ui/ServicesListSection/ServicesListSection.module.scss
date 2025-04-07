@@ -1,0 +1,16 @@
+.ServicesListSection {
+    @include container;
+    padding: 0 15px;
+    margin-top: 50px;
+}
+
+.servicesList {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.title {
+    margin-bottom: 11px;
+}
+
