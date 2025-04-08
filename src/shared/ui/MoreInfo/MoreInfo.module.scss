@@ -1,0 +1,9 @@
+.MoreInfo {
+    @include container;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    margin-top: 20px;
+}
