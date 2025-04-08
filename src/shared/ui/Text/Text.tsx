@@ -58,7 +58,7 @@ export const Text: FC<TextProps> = (props) => {
         size = TextSize.SM,
         weight = TextWeight.REGULAR,
         shadow = false,
-        color = TextColor.BROWN,
+        color = TextColor.BROWN_1,
     } = props;
 
     const mods: Record<string, boolean> = {

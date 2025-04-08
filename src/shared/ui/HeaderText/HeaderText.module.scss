@@ -17,3 +17,19 @@
     @include size-xxs;
     max-width: 300px;
 }
+
+.secondary {
+    .title {
+        @include size-sm-lg;
+        @include font-bold;
+        line-height: 10px;
+    }
+
+    .subtitle {
+        @include font-regular;
+        line-height: 10px;
+        @include size-xs-lg;
+        max-width: 300px;
+    }
+    
+}

@@ -1,0 +1,24 @@
+.Brands {
+    position: relative;
+    align-items: center;
+    height: 98px;
+    margin-top: 20px;
+}
+
+.list {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+}
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

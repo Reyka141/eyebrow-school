@@ -1,12 +1,11 @@
-import { ServicesListSection } from '@/entities/Course';
+import { CourseDetailsSection, ServicesListSection } from '@/entities/Course';
 import { GreetingSection } from '@/pages/MainPage/ui/GreetingSection/GreetingSection';
 import { Header } from '@/pages/MainPage/ui/Header/Header';
 import { TrainingDescriptionSection } from '@/pages/MainPage/ui/TrainingDescriptionSection/TrainingDescriptionSection';
+import { MoreInfo } from '@/shared/ui/MoreInfo/MoreInfo';
 import cn from 'classnames';
 import { FC } from 'react';
 import styles from './MainPage.module.scss';
-import { MoreInfo } from '@/shared/ui/MoreInfo/MoreInfo';
-
 interface MainPageProps {
     className?: string;
 }
@@ -19,7 +18,7 @@ const MainPage: FC<MainPageProps> = (props) => {
             <TrainingDescriptionSection />
             <ServicesListSection />
             <MoreInfo />
-            {/* Секция с информацией с курсами */}
+            <CourseDetailsSection />
             {/* Секция с отзывами */}
             {/* Секция с сертификатом тот же футер */}
         </div>

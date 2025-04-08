@@ -1,0 +1,38 @@
+.CourseDetailsItemOne {
+    width: 100%;
+}
+
+.button_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.practice_section_container {
+    margin-bottom: 17px;
+}
+
+.practice_section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    span {
+        @include font-semibold;
+        @include size-xl;
+        color: $brown_1;
+    }
+}
+
+.theory_section_container {
+    margin-bottom: 30px;
+}
