@@ -1,40 +1,40 @@
 .button {
     @include size-xs;
+
     font-weight: 600;
     height: 30px;
     padding: 0 10px;
-    color: $brown_1;
+    color: $brown-1;
     border-radius: $border-radius-big;
 }
 
 .primary {
     background-color: $white;
     transition: all 0.3s ease;
-    
 
     &:hover {
-        background-color: $brown_1;
+        background-color: $brown-1;
         color: $white;
     }
 
     &:active {
         background-color: $white;
-        color: $brown_1;
+        color: $brown-1;
     }
 }
 
 .secondary {
-    color: $brown_1;
+    color: $brown-1;
     background-color: transparent;
-    border: 1px solid $brown_2;
+    border: 1px solid $brown-2;
 
     &:hover {
-        background-color: $brown_1;
+        background-color: $brown-1;
         color: $white;
     }
 
     &:active {
         background-color: $white;
-        color: $brown_1;
+        color: $brown-1;
     }
 }

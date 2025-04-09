@@ -3,12 +3,13 @@
     padding: 0;
     margin: 0;
     font-family: $font-stack;
-    color: $brown_1;
+    color: $brown-1;
 }
 
 body {
     @include size-sm;
     @include font-regular;
+
     background-color: $bg;
 }
 

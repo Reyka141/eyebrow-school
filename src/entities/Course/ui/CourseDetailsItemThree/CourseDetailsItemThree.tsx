@@ -95,11 +95,7 @@ export const CourseDetailsItemThree: FC<CourseDetailsItemThreeProps> = (props) =
             <div className={styles.practice_section_container}>
                 <Text size={TextSize.XS_LG} weight={TextWeight.REGULAR} text="Практична частина" />
                 <div>
-                    <Text
-                        size={TextSize.XXS}
-                        weight={TextWeight.BOLD}
-                        text="5 Відео-демонстрацій на різних моделях"
-                    />
+                    <Text size={TextSize.XXS} weight={TextWeight.BOLD} text="5 Відео-демонстрацій на різних моделях" />
                 </div>
             </div>
             <div className={styles.theory_section_container}>

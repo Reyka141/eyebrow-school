@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import 'https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap';
 
 // Шрифты
 $font-stack: 'Inter', sans-serif;
-
 $font-stack-secondary: 'Bacasime Antique', serif;
 
 // Цвета
@@ -12,14 +11,14 @@ $white: #fff;
 
 // Functional
 $brown: #382916;
-$brown_1: #563521;
-$brown_2: #3d2d1a;
+$brown-1: #563521;
+$brown-2: #3d2d1a;
 $bg: #fff;
 $bg-transparent: rgb(27 27 27 / 60%);
 
 // Тени
 $shadow-black: 0px 2px 1px 0px #0000004d;
-$text-shadow-color: rgba(0, 0, 0, 0.3);
+$text-shadow-color: rgb(0 0 0 / 30%);
 
 // Размеры контейнеров
 $width-container: 393px;

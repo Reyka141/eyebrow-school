@@ -11,7 +11,7 @@ interface IconWithNumberProps {
     number?: number;
     theme?: IconWithNumberTheme;
 }
-export const IconWithNumber:FC<IconWithNumberProps> = (props) => {
+export const IconWithNumber: FC<IconWithNumberProps> = (props) => {
     const { className, number = 0, theme = IconWithNumberTheme.PRIMARY } = props;
     return (
         <div className={cn(styles.IconWithNumber, className, styles[theme])}>

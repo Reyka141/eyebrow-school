@@ -19,7 +19,7 @@
         display: block;
         width: 4px;
         height: 4px;
-        background-color: $brown_1;
+        background-color: $brown-1;
         border-radius: 50%;
         position: absolute;
         left: -9px;
@@ -31,5 +31,5 @@
 .fourth {
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    gap: 0;
 }

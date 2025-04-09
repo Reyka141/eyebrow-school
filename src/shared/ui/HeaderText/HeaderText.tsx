@@ -5,6 +5,7 @@ import styles from './HeaderText.module.scss';
 export enum HeaderTextTheme {
     PRIMARY = 'primary',
     SECONDARY = 'secondary',
+    TERTIARY = 'tertiary',
 }
 
 interface HeaderTextProps {

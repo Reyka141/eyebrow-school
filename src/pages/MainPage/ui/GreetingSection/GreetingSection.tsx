@@ -29,7 +29,9 @@ export const GreetingSection: FC<GreetingSectionProps> = (props) => {
         <div className={cn(styles.GreetingSection, className)}>
             <div className={styles.instagram_container}>
                 <img src={human} className={styles.image} alt="human" />
-                <Link href="/">@valeriiasaiko</Link>
+                <Link href="https://www.instagram.com/valeriii.sa/" target="_blank">
+                    @valeriiasaiko
+                </Link>
             </div>
             <div className={styles.text_container}>
                 {greetingText.map((item) => {

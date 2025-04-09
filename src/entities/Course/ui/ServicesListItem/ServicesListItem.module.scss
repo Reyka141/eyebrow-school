@@ -10,6 +10,7 @@
 .number {
     @include size-xs;
     @include font-regular;
+
     position: absolute;
     top: 2px;
     right: 2px;

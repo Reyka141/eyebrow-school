@@ -29,7 +29,8 @@
     span {
         @include font-semibold;
         @include size-xl;
-        color: $brown_1;
+
+        color: $brown-1;
     }
 }
 

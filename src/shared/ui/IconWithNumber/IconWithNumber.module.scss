@@ -5,12 +5,12 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 2px solid $brown_1;
-  
+    border: 2px solid $brown-1;
 }
 
 .number {
     @include font-semibold;
     @include size-md;
-    color: $brown_1;
+
+    color: $brown-1;
 }

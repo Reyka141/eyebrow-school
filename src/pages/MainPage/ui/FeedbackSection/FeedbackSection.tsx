@@ -1,7 +1,3 @@
-import { HeaderText } from '@/shared/ui/HeaderText/HeaderText';
-import cn from 'classnames';
-import { FC } from 'react';
-import styles from './FeedbackSection.module.scss';
 import reviews_1 from '@/shared/assets/images/reviews_1.jpg';
 import reviews_2 from '@/shared/assets/images/reviews_2.jpg';
 import reviews_3 from '@/shared/assets/images/reviews_3.jpg';
@@ -9,6 +5,10 @@ import reviews_4 from '@/shared/assets/images/reviews_4.jpg';
 import reviews_5 from '@/shared/assets/images/reviews_5.jpg';
 import reviews_6 from '@/shared/assets/images/reviews_6.jpg';
 import reviews_7 from '@/shared/assets/images/reviews_7.jpg';
+import { HeaderText, HeaderTextTheme } from '@/shared/ui/HeaderText/HeaderText';
+import cn from 'classnames';
+import { FC } from 'react';
+import styles from './FeedbackSection.module.scss';
 interface FeedbackSectionProps {
     className?: string;
 }
@@ -16,7 +16,7 @@ export const FeedbackSection: FC<FeedbackSectionProps> = (props) => {
     const { className } = props;
     return (
         <div className={cn(styles.FeedbackSection, className)}>
-            <HeaderText title="Відгуки учнів" />
+            <HeaderText title="Відгуки учнів" theme={HeaderTextTheme.TERTIARY} />
             <div className={styles.feedback_container}>
                 <img src={reviews_1} className={cn(styles.feedback_image, styles.feedback_image_1)} alt="feedback" />
                 <img src={reviews_2} className={cn(styles.feedback_image, styles.feedback_image_2)} alt="feedback" />

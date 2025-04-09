@@ -7,7 +7,7 @@
 }
 
 .brown_1 {
-    color: $brown_1;
+    color: $brown-1;
 }
 
 .white {
@@ -109,8 +109,5 @@
 // shadow
 
 .shadow {
-    text-shadow: 0px 2px 1px $text-shadow-color;
+    text-shadow: 0 2px 1px $text-shadow-color;
 }
-
-
-
