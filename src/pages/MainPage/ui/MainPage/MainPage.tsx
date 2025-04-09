@@ -5,6 +5,7 @@ import { TrainingDescriptionSection } from '@/pages/MainPage/ui/TrainingDescript
 import { MoreInfo } from '@/shared/ui/MoreInfo/MoreInfo';
 import cn from 'classnames';
 import { FC } from 'react';
+import { FeedbackSection } from '../FeedbackSection/FeedbackSection';
 import styles from './MainPage.module.scss';
 interface MainPageProps {
     className?: string;
@@ -19,7 +20,7 @@ const MainPage: FC<MainPageProps> = (props) => {
             <ServicesListSection />
             <MoreInfo />
             <CourseDetailsSection />
-            {/* Секция с отзывами */}
+            <FeedbackSection />
             {/* Секция с сертификатом тот же футер */}
         </div>
     );

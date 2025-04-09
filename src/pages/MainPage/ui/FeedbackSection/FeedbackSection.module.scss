@@ -1,0 +1,59 @@
+.FeedbackSection {
+    @include container;
+    padding: 0 15px;
+    margin-top: 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+.feedback_container {
+    position: relative;
+    height: 266px;
+    width: 100%;
+}
+.feedback_image {
+    position: absolute;
+    
+}
+.feedback_image_1 {
+    top: 0;
+    left: 37px;
+    height: 170px;
+    z-index: $z-index-10;
+}
+
+.feedback_image_2 {
+    top: 0;
+    left: 148px;
+    height: 170px;
+    z-index: $z-index-10;
+}
+.feedback_image_3 {
+    bottom: 0;
+    left: 17px;
+    height: 129px;
+}
+.feedback_image_4 {
+    bottom: 27px;
+    left: 99px;
+    height: 62px;
+}
+.feedback_image_5 {
+    bottom: 0;
+    left: 99px;
+    height: 23px;
+}
+.feedback_image_6 {
+    bottom: 27px;
+    left: 184px;
+    height: 62px;
+}
+.feedback_image_7 {
+    bottom: 28px;
+    left: 253px;
+    height: 151px;
+}
+
+
